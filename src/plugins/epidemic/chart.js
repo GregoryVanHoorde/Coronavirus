@@ -5,33 +5,33 @@ var config = {
     data: {
         labels: [],
         datasets: [{
-            label: 'Intensive care',
+            label: 'Intensieve zorgen',
             backgroundColor: COLORS.circles.intensive_care.fill,
             borderColor: COLORS.circles.intensive_care.stroke,
             data: [],
             fill: 'origin',
         }, {
-            label: 'Infected',
+            label: 'Besmet',
             backgroundColor: COLORS.circles.infected.fill,
             borderColor: COLORS.circles.infected.stroke,
             data: [],
             fill: '-1',
         }, {
-            label: 'Healthy',
+            label: 'Gezond',
             fill: 'end',
             backgroundColor: COLORS.circles.healthy.fill,
             borderColor: COLORS.circles.healthy.stroke,
             data: [],
             fill: '-1',
         }, {
-            label: 'Cured',
+            label: 'Genezen',
             fill: 'end',
             backgroundColor: COLORS.circles.immune.fill,
             borderColor: COLORS.circles.immune.stroke,
             data: [],
             fill: '-1',
         }, {
-            label: 'Deaths',
+            label: 'Doden',
             fill: 'end',
             backgroundColor: COLORS.circles.dead.fill,
             borderColor: COLORS.circles.dead.stroke,
@@ -54,14 +54,14 @@ var config = {
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'Days'
+                    labelString: 'Dagen'
                 }
             }],
             yAxes: [{
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'Number of people'
+                    labelString: 'Aantal personen'
                 },
                 ticks: {
                     suggestedMax: initialPopulation,
